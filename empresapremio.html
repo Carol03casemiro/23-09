@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão</title>
+</head>
+<body>
+        <h4>maior ou menor</h4>
+        nome: <div id = "nome"></div>
+        venda: <div id = "venda"></div>
+        meta: <div id = "meta"></div>
+        Final: <div id = "final"></div> 
+
+    <div id="numero"> </div>
+
+<script>
+        let nome = (prompt ("Digite o nome do funcionário "));            
+        let venda = Number (prompt ("Digite o valor de vendas "));
+        let meta = Number (prompt ("Digite a meta de vendas "));
+
+
+    if(venda>meta){
+        final= "funcionário: " + nome + " ganhou";
+    }
+    else{
+        final= "funcionário: " + nome + " não ganhou";    }
+
+document.getElementById("nome").innerHTML = nome
+document.getElementById("venda").innerHTML = venda
+document.getElementById("meta").innerHTML = meta
+
+
+document.getElementById("final").innerHTML = final
+
+
+</script>
+</body>
+ </html> 

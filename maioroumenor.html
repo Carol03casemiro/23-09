@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maior ou menor</title>
+</head>
+<body>
+        <h4>maior ou menor</h4>
+        Numero 1: <div id = "numero1"></div>
+        Numero 2: <div id = "numero2"></div>
+        Final: <div id = "final"></div> 
+
+    <div id="numero"> </div>
+
+<script>
+        let numero1 = Number (prompt ("Digite primeiro numero"));
+        let numero2 = Number (prompt ("Digite o segundo numero"));
+
+
+    if(numero1>numero2){
+        final=" O número " +numero1 + " é maior e o número  " + numero2 + " é menor "
+    }
+    else{
+        final=" O número " +numero2 + " é maior e o número  " + numero1 + " é menor ";
+    }
+
+    document.getElementById("numero1").innerHTML = numero1
+    document.getElementById("numero2").innerHTML = numero2
+
+document.getElementById("final").innerHTML = final
+
+
+</script>
+</body>
+ </html> 

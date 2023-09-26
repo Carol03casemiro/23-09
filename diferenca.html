@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão</title>
+</head>
+<body>
+        <h4>Divisão</h4>
+        Numero 1: <div id = "numero1"></div>
+        Numero 2: <div id = "numero2"></div>        
+        diferença: <div id = "diferenca"></div>
+        Final: <div id = "final"></div> 
+
+
+<script>
+        let numero1 = Number (prompt ("Digite primeiro numero"));
+        let numero2 = Number (prompt ("Digite o segundo numero"));
+        diferenca = numero1- numero2
+
+
+    if(numero1>numero2){
+        final=" O número " +numero1 + " é maior que o número  " + numero2 + " e  a diferença entre eles é " + diferenca;
+    }
+    else{
+        final=" O número " +numero2 + " é maior que o número  " + numero1 + "e a diferença entre eles é  " + diferenca;
+    }
+
+    document.getElementById("numero1").innerHTML = numero1
+    document.getElementById("numero2").innerHTML = numero2
+    document.getElementById("diferenca").innerHTML = diferenca
+
+document.getElementById("final").innerHTML = final
+
+
+</script>
+</body>
+ </html> 

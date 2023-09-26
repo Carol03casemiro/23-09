@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diferença de pesos </title>
+</head>
+<body>
+        <h4>diferença de pesos </h4>
+        
+        nome1: <div id = "nome1"></div>
+        nome2: <div id = "nome2"></div>
+        peso1: <div id = "peso1"></div>
+        peso2: <div id = "peso2"></div>
+        Final: <div id = "final"></div> 
+
+    <div id="numero"> </div>
+
+<script>
+        let nome1 = (prompt ("Digite o nome da primeira pessoa"));
+        let nome2 = (prompt ("Digite o nome da segunda pessoa"));
+        let peso1 = Number (prompt ("Digite o peso da primeira pessoa"));
+        let peso2 = Number (prompt ("Digite o peso da segunda pessoa"));
+       
+
+
+    if(peso1>peso2){
+        final=" O " +nome1 + " é mais pesado que  " + nome2 + " e pesa " + peso1 + "kg";
+    }
+    else{   
+        final=" O " +nome2 + " é mais pesado que  " + nome1 + " e pesa " + peso2 + "kg" ;
+    }
+
+    document.getElementById("nome1").innerHTML = nome1
+    document.getElementById("nome2").innerHTML = nome2
+    document.getElementById("peso1").innerHTML = peso1    
+    document.getElementById("peso2").innerHTML = peso2
+
+document.getElementById("final").innerHTML = final
+
+
+</script>
+</body>
+ </html> 

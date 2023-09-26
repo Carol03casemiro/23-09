@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idades</title>
+</head>
+<body>
+        <h4>Idades</h4>
+        nome 1:  <div id = "nome1"></div>
+        nome 2: <div id = "nome2"></div>
+        idade 1: <div id = "idade1"></div>
+        idade 2: <div id = "idade2"></div>
+        Ano 1: <div id = "ano1"></div>
+        Ano 2: <div id = "ano2"></div>
+        final: <div id = "final"></div>
+     
+
+    <div id="numero"> </div>
+
+<script>
+        let nome1 = (prompt ("Digite primeiro nome"));
+        let nome2 = (prompt ("Digite o segundo nome"));
+        let ano1 = Number (prompt ("Digite o primeiro ano"));
+        let ano2 = Number (prompt ("Digite o segundo ano"));
+     idade1= 2023-ano1;
+     idade2= 2023-ano2;
+
+
+    if(idade1>idade2){
+        final= nome1 + " tem mais anos que  " + nome2 ;
+    }
+    else{
+        final= nome2 + " tem mais anos que  " + nome1 ;
+    }
+
+    document.getElementById("nome1").innerHTML = nome1
+    document.getElementById("nome2").innerHTML = nome2
+    document.getElementById("ano1").innerHTML = ano1
+    document.getElementById("ano2").innerHTML = ano2
+    document.getElementById("idade1").innerHTML = idade1
+    document.getElementById("idade2").innerHTML = idade2
+
+document.getElementById("final").innerHTML = final
+
+
+</script>
+</body>
+ </html> 
